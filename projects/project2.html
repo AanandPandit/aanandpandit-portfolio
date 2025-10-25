@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT-Based Plant Monitoring System | Aanand Pandit</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .project-detail {
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+        .meta-item i {
+            color: var(--accent-primary);
+        }
+        .project-body {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-section h2 {
+            color: var(--accent-primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .project-section p, .project-section li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .project-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .project-section li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .project-section li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-size: 1.2rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        .tech-tag {
+            background-color: var(--bg-tertiary);
+            color: var(--accent-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            
+            <div class="project-header">
+                <h1>IoT-Based Plant Monitoring System</h1>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Feb 2023 - Jul 2023</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-tag"></i>
+                        <span>IoT Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-body">
+                <div class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        An intelligent IoT-based plant monitoring system designed to automate plant care by continuously 
+                        monitoring soil moisture, temperature, and humidity levels. The system provides real-time data 
+                        visualization through a mobile application and sends automated alerts when plants require attention, 
+                        making plant care effortless and efficient.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Real-time monitoring of soil moisture, temperature, and humidity</li>
+                        <li>Automated watering alerts and notifications via Android app</li>
+                        <li>Historical data tracking and visualization with charts</li>
+                        <li>Multi-plant support with individual sensor modules</li>
+                        <li>WiFi connectivity for remote monitoring from anywhere</li>
+                        <li>Battery backup system for continuous operation</li>
+                        <li>Customizable thresholds for different plant species</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technical Implementation</h2>
+                    <p>
+                        The system is built around the ESP32 microcontroller, which serves as the central processing unit 
+                        and WiFi gateway. Multiple sensors including capacitive soil moisture sensors, DHT22 temperature and 
+                        humidity sensors are connected to gather environmental data.
+                    </p>
+                    <p>
+                        The ESP32 communicates with a Firebase Realtime Database to store sensor readings, enabling cloud-based 
+                        data access. An Android application developed in Java retrieves this data and presents it in an 
+                        intuitive dashboard with real-time graphs and alert notifications.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Results & Impact</h2>
+                    <ul>
+                        <li>Successfully reduced manual plant care and monitoring efforts by 80%</li>
+                        <li>Tested across multiple plant species with 95% accuracy in moisture detection</li>
+                        <li>Prevented over-watering and under-watering through timely alerts</li>
+                        <li>Improved plant health and survival rate in test environments</li>
+                        <li>Average response time of less than 2 seconds for sensor data updates</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Arduino IDE</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Android (Java)</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">DHT22 Sensor</span>
+                        <span class="tech-tag">Soil Moisture Sensor</span>
+                        <span class="tech-tag">WiFi</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>System Architecture</h2>
+                    <p>
+                        The system follows a three-tier architecture:
+                    </p>
+                    <ul>
+                        <li><strong>Sensor Layer:</strong> Physical sensors collect environmental data from plants</li>
+                        <li><strong>Processing Layer:</strong> ESP32 processes sensor data and manages WiFi communication</li>
+                        <li><strong>Application Layer:</strong> Android app provides user interface and data visualization</li>
+                    </ul>
+                    <p>
+                        Data flows from sensors through the ESP32 to Firebase, where it's stored and made accessible to the 
+                        mobile application. The app uses Firebase Cloud Messaging for push notifications when attention is needed.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Challenges & Learning</h2>
+                    <p>
+                        One significant challenge was calibrating the soil moisture sensors for different soil types and plant 
+                        species. This required extensive testing and the development of calibration profiles for various scenarios.
+                    </p>
+                    <p>
+                        Power management was another consideration, as the system needed to operate continuously while minimizing 
+                        power consumption. This led to implementing deep sleep modes between sensor readings and optimizing WiFi 
+                        connection protocols.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Future Enhancements</h2>
+                    <ul>
+                        <li>Automated watering system with pump and valve control</li>
+                        <li>Light intensity monitoring with automated grow light control</li>
+                        <li>Machine learning for predictive plant health analysis</li>
+                        <li>Integration with weather API for outdoor plant management</li>
+                        <li>Web dashboard for cross-platform accessibility</li>
+                        <li>Camera integration for visual plant health monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aanand Pandit | Nepal</p>
+        </div>
+    </footer>
+</body>
+</html>

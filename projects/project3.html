@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenHouse Agri-Farming Monitoring System | Aanand Pandit</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .project-detail {
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+        .meta-item i {
+            color: var(--accent-primary);
+        }
+        .award-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #1A202C;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .project-body {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-section h2 {
+            color: var(--accent-primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .project-section p, .project-section li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .project-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .project-section li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .project-section li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-size: 1.2rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        .tech-tag {
+            background-color: var(--bg-tertiary);
+            color: var(--accent-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            
+            <div class="project-header">
+                <h1>GreenHouse Agri-Farming Monitoring System</h1>
+                <div class="award-badge">
+                    <i class="fas fa-trophy"></i> 2nd Prize - Hackhazards'25
+                </div>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>April 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>The Namespace Community</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-body">
+                <div class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Developed during the Hackhazards'25 hackathon, this greenhouse monitoring system represents a 
+                        comprehensive solution for modern agriculture. The project combines IoT sensor simulation, 
+                        real-time data streaming, and cloud integration to create an intelligent greenhouse management 
+                        platform that increases crop productivity while minimizing human intervention.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Achievement</h2>
+                    <p>
+                        This project secured <strong>2nd Prize</strong> at Hackhazards'25, a prestigious hackathon organized 
+                        by The Namespace Community. The judges recognized the innovative use of InfinyOn Fluvio Cloud for 
+                        real-time data streaming and the comprehensive dashboard implementation.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Real-time sensor simulation for temperature, humidity, soil moisture, and light intensity</li>
+                        <li>PyQt5-based desktop dashboard with intuitive data visualization</li>
+                        <li>InfinyOn Fluvio Cloud integration for distributed data streaming</li>
+                        <li>Automated climate control with sensor-based actuator triggers</li>
+                        <li>Historical data analytics with trend analysis</li>
+                        <li>Alert system for abnormal environmental conditions</li>
+                        <li>Multi-zone greenhouse support for different crop requirements</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technical Implementation</h2>
+                    <p>
+                        The system architecture leverages InfinyOn Fluvio, a distributed streaming platform, to handle 
+                        real-time sensor data flow. PyQt5 provides the graphical user interface, offering farmers an 
+                        intuitive dashboard to monitor and control greenhouse conditions.
+                    </p>
+                    <p>
+                        Sensor data is simulated using Python scripts that mimic real-world greenhouse sensors, publishing 
+                        data streams to Fluvio topics. The dashboard application subscribes to these topics, processes the 
+                        data, and displays it through charts, graphs, and control panels.
+                    </p>
+                    <p>
+                        The system implements a Smart Connector pattern, allowing easy integration of physical sensors 
+                        to replace the simulation layer without modifying the core application logic.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Impact on Agriculture</h2>
+                    <ul>
+                        <li>Increased crop productivity through optimized environmental control</li>
+                        <li>Reduced water consumption with precision irrigation based on soil moisture data</li>
+                        <li>Minimized manual intervention allowing farmers to manage multiple greenhouses remotely</li>
+                        <li>Prevention of crop loss through early detection of unfavorable conditions</li>
+                        <li>Data-driven decision making with historical trend analysis</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyQt5</span>
+                        <span class="tech-tag">InfinyOn Fluvio Cloud</span>
+                        <span class="tech-tag">Real-time Streaming</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Agriculture Tech</span>
+                        <span class="tech-tag">Cloud Integration</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>System Components</h2>
+                    <ul>
+                        <li><strong>Sensor Simulation Module:</strong> Generates realistic greenhouse sensor data patterns</li>
+                        <li><strong>Fluvio Producer:</strong> Publishes sensor data to cloud streams</li>
+                        <li><strong>Fluvio Consumer:</strong> Subscribes to data streams and processes incoming data</li>
+                        <li><strong>Dashboard Application:</strong> PyQt5-based GUI for monitoring and control</li>
+                        <li><strong>Control Logic:</strong> Automated decision-making for climate control systems</li>
+                        <li><strong>Analytics Engine:</strong> Historical data processing and trend analysis</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Innovation Highlights</h2>
+                    <p>
+                        What set this project apart was the innovative use of InfinyOn Fluvio for agricultural IoT. 
+                        While many greenhouse systems use traditional MQTT or HTTP protocols, Fluvio's distributed 
+                        streaming architecture provides superior scalability and real-time performance.
+                    </p>
+                    <p>
+                        The modular design allows farmers to start with simulated sensors and gradually transition to 
+                        physical hardware without system redesign, making it accessible for testing and demonstration 
+                        purposes before full deployment.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Hackathon Experience</h2>
+                    <p>
+                        Developed within the intense 24-hour timeframe of Hackhazards'25, this project required rapid 
+                        prototyping, team collaboration, and creative problem-solving. The team successfully integrated 
+                        unfamiliar technology (Fluvio) while building a complete, functional system with both frontend 
+                        and backend components.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Future Enhancements</h2>
+                    <ul>
+                        <li>Integration with actual IoT sensors (ESP32/Arduino-based)</li>
+                        <li>Machine learning models for crop growth prediction</li>
+                        <li>Mobile app for remote greenhouse monitoring</li>
+                        <li>Computer vision integration for plant health assessment</li>
+                        <li>Multi-greenhouse management with centralized dashboard</li>
+                        <li>Weather API integration for predictive climate control</li>
+                        <li>Energy optimization through smart scheduling of climate control systems</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Code & Resources</h2>
+                    <p>
+                        The project demonstrates the intersection of modern cloud technologies and traditional agriculture, 
+                        showcasing how distributed systems can solve real-world problems in farming. The implementation 
+                        serves as a reference architecture for building scalable IoT applications in agriculture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aanand Pandit | Nepal</p>
+        </div>
+    </footer>
+</body>
+</html>

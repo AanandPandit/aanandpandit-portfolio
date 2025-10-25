@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision-Based UAV for Search and Rescue | Aanand Pandit</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .project-detail {
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+        .meta-item i {
+            color: var(--accent-primary);
+        }
+        .project-body {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-section h2 {
+            color: var(--accent-primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .project-section p, .project-section li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .project-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .project-section li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .project-section li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-size: 1.2rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        .tech-tag {
+            background-color: var(--bg-tertiary);
+            color: var(--accent-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            
+            <div class="project-header">
+                <h1>Vision-Based UAV for Search and Rescue Operations</h1>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Oct 2024 - Apr 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Final Year Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-body">
+                <div class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This project focuses on developing an autonomous UAV (Unmanned Aerial Vehicle) system designed for 
+                        search and rescue operations in disaster-stricken areas. Using advanced computer vision and AI technologies, 
+                        the drone can autonomously detect and track human victims in real-time, significantly improving response 
+                        times in critical situations.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Real-time human detection and tracking using YOLOv8 object detection model</li>
+                        <li>Autonomous navigation in disaster zones with obstacle avoidance</li>
+                        <li>Live video streaming with AI-powered victim identification</li>
+                        <li>GPS coordinate logging of detected victims for rescue team coordination</li>
+                        <li>Thermal imaging integration for night operations and detecting victims under debris</li>
+                        <li>Multi-drone coordination for large area coverage</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technical Implementation</h2>
+                    <p>
+                        The system employs YOLOv8, a state-of-the-art object detection algorithm, trained specifically on 
+                        human detection datasets. The model runs on an onboard NVIDIA Jetson Nano for edge computing, 
+                        enabling real-time processing without relying on cloud connectivity.
+                    </p>
+                    <p>
+                        The drone's flight controller is based on ArduPilot, integrated with custom Python scripts for 
+                        autonomous mission planning and execution. Computer vision processing is implemented using OpenCV 
+                        and PyTorch frameworks.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Results & Impact</h2>
+                    <ul>
+                        <li>Achieved 80% increase in search efficiency compared to traditional manual search methods</li>
+                        <li>Successfully demonstrated real-time victim detection with 92% accuracy in test scenarios</li>
+                        <li>Reduced manual intervention by enabling autonomous operation in hazardous environments</li>
+                        <li>Capable of covering 5x more area in the same timeframe compared to ground-based search teams</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">YOLOv8</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">NVIDIA Jetson Nano</span>
+                        <span class="tech-tag">ArduPilot</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Drone Technology</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Challenges & Learning</h2>
+                    <p>
+                        One of the major challenges was optimizing the YOLOv8 model to run efficiently on the limited 
+                        computational resources of the Jetson Nano while maintaining real-time performance. This required 
+                        model quantization and optimization techniques.
+                    </p>
+                    <p>
+                        Another significant challenge was ensuring stable communication between the ground station and the 
+                        UAV in disaster scenarios where infrastructure might be damaged. This led to implementing a robust 
+                        failsafe system with autonomous return-to-home capabilities.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Future Enhancements</h2>
+                    <ul>
+                        <li>Integration of multi-spectral cameras for enhanced detection capabilities</li>
+                        <li>Implementation of swarm intelligence for coordinated multi-drone operations</li>
+                        <li>Addition of emergency supply delivery mechanism</li>
+                        <li>Development of mobile app for real-time mission monitoring and control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aanand Pandit | Nepal</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aanand Pandit - AI & ML Engineer, IoT Developer, and Robotics Engineer from Nepal. Specializing in computer vision, embedded systems, and intelligent automation.">
+    <meta name="keywords" content="AI Engineer, ML Engineer, IoT Developer, Robotics, Computer Vision, YOLOv8, ESP32, Python, Nepal">
+    <meta name="author" content="Aanand Pandit">
+    <meta property="og:title" content="Aanand Pandit | AI & ML Engineer">
+    <meta property="og:description" content="Portfolio showcasing AI/ML projects, IoT innovations, and robotics engineering work">
+    <meta property="og:type" content="website">
+    <title>Aanand Pandit | AI & ML Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <canvas id="particleCanvas"></canvas>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">AP</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="feedbackBtn" class="feedback-btn">
+                    <i class="fas fa-comment-dots"></i> Feedback
+                </button>
+                <a href="attached_assets/AanandPanditResume_1761309841750.pdf" download class="resume-btn">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-greeting">Hello, I'm</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Aanand Pandit</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Crafting intelligent solutions with AI, IoT, and Robotics
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="visitorCount">0</div>
+                    <div class="stat-label">Total Visitors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">10+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">5+</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p class="about-intro">
+                        A passionate Computer Science graduate specializing in <span class="highlight">AI & ML</span> with hands-on experience in software development, 
+                        AI/ML algorithms and frameworks, embedded systems, real-time simulations, cloud integration, project management, 
+                        data analysis, troubleshooting technical issues, hardware troubleshooting, and optimizing performance.
+                    </p>
+                    <p>
+                        Adaptable, curious, and committed to contributing to impactful projects and dynamic teams. I thrive on solving 
+                        complex problems and building innovative solutions that make a real-world difference.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML Engineering</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>IoT & Embedded Systems</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Robotics Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">02.</span>
+                Education
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2025</div>
+                        <h3>B.Tech in Computer Science (AI & ML)</h3>
+                        <p class="institution">Sree Vidyanikethan Engineering College</p>
+                        <p class="location">Tirupati, India</p>
+                        <div class="timeline-gpa">GPA: 8.3/10</div>
+                        <p class="timeline-desc">
+                            Specialized in Artificial Intelligence and Machine Learning with hands-on experience in 
+                            deep learning, computer vision, NLP, and IoT systems.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <h3>Intermediate in Computer Science</h3>
+                        <p class="institution">Koshi Saint James Residential Secondary School</p>
+                        <p class="location">Itahari, Sunsari, Nepal</p>
+                        <div class="timeline-gpa">GPA: 2.79/4</div>
+                        <p class="timeline-desc">
+                            Foundation in computer science fundamentals, programming, and mathematical concepts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">03.</span>
+                Technical Skills
+            </h2>
+            <div class="skills-filter fade-in">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="aiml">AI/ML</button>
+                <button class="filter-btn" data-filter="iot">IoT & Embedded</button>
+                <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card fade-in" data-category="programming">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="programming">
+                    <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                    <h3>C/C++</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="programming">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="aiml">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>TensorFlow</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="aiml">
+                    <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                    <h3>PyTorch</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="aiml">
+                    <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                    <h3>OpenCV</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="aiml">
+                    <div class="skill-icon"><i class="fas fa-search"></i></div>
+                    <h3>YOLOv8</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="87"></div>
+                    </div>
+                    <span class="skill-percentage">87%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="iot">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>ESP32/Arduino</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="92"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="iot">
+                    <div class="skill-icon"><i class="fab fa-raspberry-pi"></i></div>
+                    <h3>Raspberry Pi</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="iot">
+                    <div class="skill-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>IoT Sensors</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="cloud">
+                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                    <h3>AWS</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="cloud">
+                    <div class="skill-icon"><i class="fab fa-google"></i></div>
+                    <h3>Google Cloud</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="78"></div>
+                    </div>
+                    <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="tools">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git/GitHub</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="tools">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>MySQL/PostgreSQL</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="82"></div>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-card fade-in" data-category="tools">
+                    <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>VS Code</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">04.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in" data-project="1">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="openProjectModal(1)">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">Drone</span>
+                        </div>
+                        <h3>Vision-Based UAV for Search and Rescue</h3>
+                        <p>Autonomous drone system using AI for victim detection in disaster zones with 80% increased efficiency.</p>
+                        <div class="project-date">
+                            <i class="far fa-calendar"></i> Oct 2024 - Apr 2025
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-project="2">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="openProjectModal(2)">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <div class="project-number">02</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Android</span>
+                        </div>
+                        <h3>IoT-Based Plant Monitoring System</h3>
+                        <p>Smart plant monitoring with real-time data visualization, reducing manual care efforts by 80%.</p>
+                        <div class="project-date">
+                            <i class="far fa-calendar"></i> Feb 2023 - Jul 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-project="3">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="openProjectModal(3)">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <div class="project-number">03</div>
+                        <div class="project-award">
+                            <i class="fas fa-trophy"></i> 2nd Prize
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">PyQt5</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Agriculture</span>
+                        </div>
+                        <h3>GreenHouse Agri-Farming System</h3>
+                        <p>Real-time greenhouse monitoring dashboard with InfinyOn Fluvio Cloud integration.</p>
+                        <div class="project-date">
+                            <i class="far fa-calendar"></i> Hackhazards'25
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">05.</span>
+                Work Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2023 - Nov 2023</div>
+                        <h3>AI Intern</h3>
+                        <p class="institution">CodSoft (Virtual)</p>
+                        <ul class="timeline-list">
+                            <li>Developed and delivered 3 functional AI prototypes, including a face recognition attendance system and an NLP chatbot, achieving up to 92% accuracy</li>
+                            <li>Gained proficiency in rapid prototyping and collaborating effectively within a virtual team environment</li>
+                            <li>Implemented machine learning models using TensorFlow and PyTorch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">06.</span>
+                Certifications & Achievements
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card fade-in">
+                    <div class="cert-icon achievement">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackhazards'25 - 2nd Prize</h3>
+                    <p class="cert-issuer">The Namespace Community</p>
+                    <p class="cert-project">GreenHouse Agri-Farming System</p>
+                    <div class="cert-date">April 2025</div>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Oracle AI Vector Search</h3>
+                    <p class="cert-issuer">Oracle University</p>
+                    <div class="cert-badge">Certified Professional</div>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Google Cybersecurity</h3>
+                    <p class="cert-issuer">Coursera</p>
+                    <div class="cert-badge">Professional Certificate</div>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing & DevOps</h3>
+                    <p class="cert-issuer">ExcelR E-Learning</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p class="cert-issuer">Scholiverse Educare</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <div class="cert-icon achievement">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>National Robotics Competition</h3>
+                    <p class="cert-issuer">Technex'24, IIT BHU</p>
+                    <div class="cert-date">2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">07.</span>
+                Blog
+            </h2>
+            <div class="coming-soon fade-in">
+                <div class="coming-soon-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Coming Soon!</h3>
+                <p>I'm working on sharing my knowledge and experiences through blog posts. Stay tuned for articles on AI, IoT, and Robotics.</p>
+                <div class="coming-soon-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>AI/ML Tutorials</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>IoT Project Guides</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Tech Insights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">08.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>I'm always interested in hearing about new projects, opportunities, and collaborations. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Email</span>
+                                <a href="mailto:aanandpandit0001@gmail.com">aanandpandit0001@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Phone</span>
+                                <span>+91 9515525335</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Location</span>
+                                <span>Nepal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/AanandPandit" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:aanandpandit0001@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form fade-in">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Aanand Pandit. Designed & Built with <span class="heart">❤</span> in Nepal</p>
+                </div>
+                <div class="footer-right">
+                    <span>Total Visitors: <span id="footerVisitorCount">0</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content feedback-modal-content">
+            <button class="modal-close" onclick="closeFeedbackModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Share Your Feedback</h2>
+            <p class="modal-subtitle">Help me improve by sharing your thoughts and suggestions</p>
+            
+            <form id="feedbackForm">
+                <div class="rating-section">
+                    <label>Rate this portfolio</label>
+                    <div class="star-rating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="feedbackName">Name (Optional)</label>
+                        <input type="text" id="feedbackName" name="feedbackName">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackEmail">Email (Optional)</label>
+                        <input type="email" id="feedbackEmail" name="feedbackEmail">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="suggestion">Your Suggestions</label>
+                    <textarea id="suggestion" name="suggestion" rows="4" placeholder="What could be improved?"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <span>Submit Feedback</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage"></span>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/visitorCounter.js"></script>
+    <script src="assets/js/projectModals.js"></script>
+    <script src="assets/js/skills.js"></script>
+    <script src="assets/js/feedback.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
